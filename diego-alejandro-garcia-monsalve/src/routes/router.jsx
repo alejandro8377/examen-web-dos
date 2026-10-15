@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Catalogo from '../pages/Catalogo';
 import Contacto from '../pages/Contacto';
 import Inicio from '../pages/Inicio';
+import NoEncontrada from '../pages/NoEncontrada';
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
       { index: true, element: <Inicio /> },
       { path: 'catalogo', element: <Catalogo /> },
       { path: 'contacto', element: <Contacto /> },
+      { path: '*', element: <NoEncontrada /> },
     ],
   },
 ]);
