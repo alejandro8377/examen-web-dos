@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Layout from '../components/Layout';
+import Catalogo from '../pages/Catalogo';
 import Inicio from '../pages/Inicio';
 
 function PlaceholderPage({ titulo, descripcion }) {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <Inicio /> },
-      { path: 'catalogo', element: <PlaceholderPage titulo="El catálogo." descripcion="Libros para pensar los espacios y los objetos cotidianos." /> },
+      { path: 'catalogo', element: <Catalogo /> },
       { path: 'contacto', element: <PlaceholderPage titulo="Hablemos de libros." descripcion="Escríbenos para compartir una pregunta o sugerencia." /> },
     ],
   },
